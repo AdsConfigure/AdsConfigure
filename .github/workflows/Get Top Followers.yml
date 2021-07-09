@@ -1,10 +1,6 @@
 name: Get Top Followers
 
-on:
-  schedule:
-    - cron: '0 20 * * *'
-  watch:
-    types: started
+on: push
 
 jobs:
   top-followers:
