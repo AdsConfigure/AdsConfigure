@@ -1,2 +1,5 @@
+import sys
+
+
 with open(readmePath, "w") as readme:
-    readme.write(‘测试’)
+    readme.write("test")
