@@ -41,11 +41,11 @@ def getzhihustatus():
         if(changecount>0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 +{changecount} >>>> {voteupCount}'
-                readme.writelines(s+\n)
+                readme.writelines(s+"\n")
         elif(changecount<0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 {changecount} >>>> {voteupCount}'
-                readme.writelines(s+\n)
+                readme.writelines(s+"\n")
     voteupCounttemp=voteupCount
 
     index1 = r.text.find('"zhihu:thankedCount" content="')
@@ -62,11 +62,11 @@ def getzhihustatus():
         if (changecount > 0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 +{changecount} >>>> {thankedCount}'
-                readme.writelines(s+\n)
+                readme.writelines(s+"\n")
         elif (changecount < 0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 {changecount} >>>> {thankedCount}'
-                readme.writelines(s+\n)
+                readme.writelines(s+"\n")
         thankedCounttemp=thankedCount
 
     index1 = r.text.find('itemProp="zhihu:followerCount" content="')
@@ -83,11 +83,11 @@ def getzhihustatus():
         if (changecount > 0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 +{changecount} >>>> {followerCount}'
-                readme.writelines(s+\n)
+                readme.writelines(s+"\n")
         elif (changecount < 0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 {changecount} >>>> {followerCount}'
-                readme.writelines(s+\n)
+                readme.writelines(s+"\n")
         followerCounttemp=followerCount
     changecount = 0
 
