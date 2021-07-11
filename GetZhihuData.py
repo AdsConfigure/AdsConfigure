@@ -41,11 +41,11 @@ def getzhihustatus():
         if(changecount>0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 +{changecount} >>>> {voteupCount}'
-                readme.write(s)
+                readme.writeline(s)
         elif(changecount<0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 {changecount} >>>> {voteupCount}'
-                readme.write(s)
+                readme.writeline(s)
     voteupCounttemp=voteupCount
 
     index1 = r.text.find('"zhihu:thankedCount" content="')
@@ -62,11 +62,11 @@ def getzhihustatus():
         if (changecount > 0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 +{changecount} >>>> {thankedCount}'
-                readme.write(s)
+                readme.writeline(s)
         elif (changecount < 0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 {changecount} >>>> {thankedCount}'
-                readme.write(s)
+                readme.writeline(s)
         thankedCounttemp=thankedCount
 
     index1 = r.text.find('itemProp="zhihu:followerCount" content="')
@@ -83,11 +83,11 @@ def getzhihustatus():
         if (changecount > 0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 +{changecount} >>>> {followerCount}'
-                readme.write(s)
+                readme.writeline(s)
         elif (changecount < 0):
             with open(readmePath, "a") as readme:
                 s=time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 {changecount} >>>> {followerCount}'
-                readme.write(s)
+                readme.writeline(s)
         followerCounttemp=followerCount
     changecount = 0
 
@@ -105,7 +105,7 @@ if __name__=='__main__':
         except Exception as e:
             with open(readmePath, "w") as readme:
                 s="Exception:"+str(e)
-                readme.write(s)
+                readme.writeline(s)
             break
             pass
         
@@ -115,4 +115,4 @@ if __name__=='__main__':
 #                     f"\n{zhihu}\n", content)
 
 #     with open(readmePath, "w") as readme:
-#         readme.write(newContent)
+#         readme.writeline(newContent)
