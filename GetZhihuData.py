@@ -17,7 +17,7 @@ headers = {
 
 url = 'https://www.zhihu.com/people/yy6969'
 
-r = requests.get(url, headers=headers, verify=False)
+r = requests.get(url, headers=headers)
 soup = BeautifulSoup(r.content, "lxml")
 
 # %%
