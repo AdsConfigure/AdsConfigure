@@ -1,1 +1,1 @@
-Exception:write() takes exactly one argument (2 given)2021-07-11  15:11:26   点赞数 +1 >>>> 22992
+Exception:write() takes exactly one argument (2 given)2021-07-11  15:11:26   点赞数 +1 >>>> 229922021-07-11  15:16:03   点赞数 -2 >>>> 229922021-07-11  15:17:02   喜欢数 +1 >>>> 4401
