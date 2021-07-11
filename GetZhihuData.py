@@ -37,8 +37,8 @@ zhihu = '获得{}次赞同，{}次喜欢，{}次收藏，{}个关注'.format(agr
 with open(readmePath, "r") as readme:
     content = readme.read()
 
-newContent = re.sub(r"(?<=<!\-\-START_SECTION:zhihu\-followers\-\->)[\s\S]*(?=<!\-\-END_SECTION:zhihu\-followers\-\->)",
-                    f"\n{zhihu}\n", content)
+# newContent = re.sub(r"(?<=<!\-\-START_SECTION:zhihu\-followers\-\->)[\s\S]*(?=<!\-\-END_SECTION:zhihu\-followers\-\->)",
+#                     f"\n{zhihu}\n", content)
 
-with open(readmePath, "w") as readme:
-    readme.write(newContent)
+# with open(readmePath, "w") as readme:
+#     readme.write(newContent)
