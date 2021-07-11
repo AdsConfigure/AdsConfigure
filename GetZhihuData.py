@@ -46,7 +46,7 @@ def getzhihustatus():
             with open(readmePath, "w") as readme:
                     readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 {changecount} >>>> {voteupCount}','a')
             break
-        voteupCounttemp=voteupCount
+    voteupCounttemp=voteupCount
 
     index1 = r.text.find('"zhihu:thankedCount" content="')
     index2 = r.text.find('"/><meta itemProp="zhihu:followerCount"')
