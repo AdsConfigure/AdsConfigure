@@ -97,6 +97,8 @@ if __name__=='__main__':
             getzhihustatus()
             time.sleep(1)
         except Exception as e:
+            with open(readmePath, "w") as readme:
+                readme.write("Exception")
             break
             pass
         
