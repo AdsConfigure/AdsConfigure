@@ -1,6 +1,9 @@
 name: Get Top Followers
 
-on: push 
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '* * * * *'
 
 jobs:
   top-followers:
