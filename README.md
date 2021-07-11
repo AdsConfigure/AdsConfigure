@@ -1,1 +1,1 @@
-Exception
+Exception:<class 'Exception'>
