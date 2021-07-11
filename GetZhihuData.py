@@ -107,10 +107,4 @@ if __name__=='__main__':
             break
             pass
         
-    
- 
-# newContent = re.sub(r"(?<=<!\-\-START_SECTION:zhihu\-followers\-\->)[\s\S]*(?=<!\-\-END_SECTION:zhihu\-followers\-\->)",
-#                     f"\n{zhihu}\n", content)
-
-#     with open(readmePath, "w") as readme:
-#         readme.writeline(newContent)
+   
