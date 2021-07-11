@@ -61,7 +61,6 @@ def getzhihustatus():
         changecount = thankedCount - thankedCounttemp
         if (changecount > 0):
             with open(readmePath, "a") as readme:
-                s=
                 readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 +{changecount} >>>> {thankedCount}')
         elif (changecount < 0):
             with open(readmePath, "a") as readme:
