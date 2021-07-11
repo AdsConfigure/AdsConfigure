@@ -41,7 +41,7 @@ def getzhihustatus():
         if(changecount>0):
             with open(readmePath, "w") as readme:
                 readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 +{changecount} >>>> {voteupCount}','a')
-    elif(changecount<0):
+        elif(changecount<0):
             with open(readmePath, "w") as readme:
                 readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 {changecount} >>>> {voteupCount}','a')
     voteupCounttemp=voteupCount
@@ -58,10 +58,10 @@ def getzhihustatus():
     if (thankedCounttemp != thankedCount):
         changecount = thankedCount - thankedCounttemp
         if (changecount > 0):
-             with open(readmePath, "w") as readme:
+            with open(readmePath, "w") as readme:
                 readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 +{changecount} >>>> {thankedCount}','a')
         elif (changecount < 0):
-             with open(readmePath, "w") as readme:
+            with open(readmePath, "w") as readme:
                 readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 {changecount} >>>> {thankedCount}','a')
         thankedCounttemp=thankedCount
 
@@ -77,10 +77,10 @@ def getzhihustatus():
     if (followerCounttemp != followerCount):
         changecount = followerCount - followerCounttemp
         if (changecount > 0):
-             with open(readmePath, "w") as readme:
+            with open(readmePath, "w") as readme:
                 readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 +{changecount} >>>> {followerCount}','a')
         elif (changecount < 0):
-             with open(readmePath, "w") as readme:
+            with open(readmePath, "w") as readme:
                 readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 {changecount} >>>> {followerCount}','a')
         followerCounttemp=followerCount
     changecount = 0
