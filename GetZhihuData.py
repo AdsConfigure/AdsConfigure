@@ -43,7 +43,7 @@ def getzhihustatus():
                 readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 +{changecount} >>>> {voteupCount}','a')
     elif(changecount<0):
             with open(readmePath, "w") as readme:
-                    readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 {changecount} >>>> {voteupCount}','a')
+                readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   点赞数 {changecount} >>>> {voteupCount}','a')
     voteupCounttemp=voteupCount
 
     index1 = r.text.find('"zhihu:thankedCount" content="')
@@ -59,10 +59,10 @@ def getzhihustatus():
         changecount = thankedCount - thankedCounttemp
         if (changecount > 0):
              with open(readmePath, "w") as readme:
-                    readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 +{changecount} >>>> {thankedCount}','a')
+                readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 +{changecount} >>>> {thankedCount}','a')
         elif (changecount < 0):
              with open(readmePath, "w") as readme:
-                    readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 {changecount} >>>> {thankedCount}','a')
+                readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   喜欢数 {changecount} >>>> {thankedCount}','a')
         thankedCounttemp=thankedCount
 
     index1 = r.text.find('itemProp="zhihu:followerCount" content="')
@@ -78,10 +78,10 @@ def getzhihustatus():
         changecount = followerCount - followerCounttemp
         if (changecount > 0):
              with open(readmePath, "w") as readme:
-                    readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 +{changecount} >>>> {followerCount}','a')
+                readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 +{changecount} >>>> {followerCount}','a')
         elif (changecount < 0):
              with open(readmePath, "w") as readme:
-                    readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 {changecount} >>>> {followerCount}','a')
+                readme.write(time.strftime('%Y-%m-%d  %H:%M:%S')+f'   粉丝数 {changecount} >>>> {followerCount}','a')
         followerCounttemp=followerCount
     changecount = 0
 
