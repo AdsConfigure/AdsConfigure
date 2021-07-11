@@ -94,11 +94,9 @@ def getzhihustatus():
 
 if __name__=='__main__':
     a=1
-    while(True):
+    while(a<100):
         a=a+1
-        if a>60:
-            break
-            
+        
         try:
             getzhihustatus()
             time.sleep(1)
