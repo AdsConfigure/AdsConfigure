@@ -93,7 +93,7 @@ if __name__=='__main__':
             getzhihustatus()
             time.sleep(1)
             a=a+1
-            if a==60:
+            if a>60:
                 break
         except Exception as e:
             pass
