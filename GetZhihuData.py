@@ -98,14 +98,11 @@ if __name__=='__main__':
             time.sleep(1)
         except Exception as e:
             with open(readmePath, "w") as readme:
-                readme.write("Exception:"+Exception)
+                readme.write("Exception:"+str(Exception))
             break
             pass
         
     
-        
-    with open(readmePath, "r") as readme:
-        content = readme.read()
  
 # newContent = re.sub(r"(?<=<!\-\-START_SECTION:zhihu\-followers\-\->)[\s\S]*(?=<!\-\-END_SECTION:zhihu\-followers\-\->)",
 #                     f"\n{zhihu}\n", content)
