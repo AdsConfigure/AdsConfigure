@@ -25,6 +25,7 @@ def getzhihustatus():
     global thankedCounttemp
     global followerCounttemp
     global changecount
+    global readmePath
     r = requests.get(url=url, headers=headers)
     index1 = r.text.find('zhihu:voteupCount" content="')
     index2 = r.text.find('"/><meta itemProp="zhihu:thankedCount"')
