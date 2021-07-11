@@ -89,14 +89,18 @@ def getzhihustatus():
 if __name__=='__main__':
     a=1
     while(True):
+        a=a+1
+        if a>60:
+            break
+            
         try:
             getzhihustatus()
             time.sleep(1)
-            a=a+1
-            if a>60:
-                break
         except Exception as e:
+            break
             pass
+        
+    
         
     with open(readmePath, "r") as readme:
         content = readme.read()
