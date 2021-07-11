@@ -98,7 +98,7 @@ if __name__=='__main__':
             time.sleep(1)
         except Exception as e:
             with open(readmePath, "w") as readme:
-                readme.write("Exception:"+str(Exception))
+                readme.write("Exception:"+str(e))
             break
             pass
         
