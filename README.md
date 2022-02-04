@@ -1,4 +1,1 @@
-Exception:invalid literal for int() with base 10: ''2022-02-04  00:26:25   点赞数 +1 >>>> 70203
-2022-02-04  02:37:17   点赞数 +1 >>>> 70210
-2022-02-04  03:22:46   点赞数 +1 >>>> 70215
-2022-02-04  03:32:40   点赞数 +1 >>>> 70217
+Exception:("Connection broken: ConnectionResetError(104, 'Connection reset by peer')", ConnectionResetError(104, 'Connection reset by peer'))
