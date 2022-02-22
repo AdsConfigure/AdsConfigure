@@ -1,1 +1,1 @@
-Exception:("Connection broken: ConnectionResetError(104, 'Connection reset by peer')", ConnectionResetError(104, 'Connection reset by peer'))
+Exception:('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
