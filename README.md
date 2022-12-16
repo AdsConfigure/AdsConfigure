@@ -1,1 +1,1 @@
-Exception:invalid literal for int() with base 10: ''
+Exception:('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
