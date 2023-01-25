@@ -1,1 +1,1 @@
-Exception:invalid literal for int() with base 10: ''
+Exception:HTTPSConnectionPool(host='www.zhihu.com', port=443): Max retries exceeded with url: /people/yy6969 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f53dcd65a90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
